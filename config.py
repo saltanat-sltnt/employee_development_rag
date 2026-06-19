@@ -10,7 +10,7 @@ PDF_FILES = [
 ]
 
 # chroma db
-CHROMA_DIR = BASE_DIR / "chromo_lanchain_db"
+CHROMA_DIR = BASE_DIR / "chroma_langchain_db"
 
 # chroma collection name
 COLLECTION_NAME = "example_collection"
