@@ -5,7 +5,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).parent
 
 # paths of pdf files to index (hr docs)
-PDF_FILES = [
+SOURCE_FILES = [
     BASE_DIR / "nke-10k-2023.pdf",
 ]
 
@@ -13,7 +13,7 @@ PDF_FILES = [
 CHROMA_DIR = BASE_DIR / "chroma_langchain_db"
 
 # chroma collection name
-COLLECTION_NAME = "example_collection"
+COLLECTION_NAME = "employee_development_collection"
 
 # embedding model
 EMBEDDING_MODEL = "text-embedding-3-small"
