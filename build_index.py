@@ -1,7 +1,6 @@
 # creates Chroma index
 
-import getpass
-import os
+from utils import setup_openai_key
 import shutil
 import pypdf
 
@@ -21,12 +20,12 @@ from config import (
 )
 
 
-def setup_openai_key():
-    if not os.environ.get("OPENAI_API_KEY"):
-        api_key = getpass.getpass("Enter OpenAI API key: ")
-        if not api_key:
-            raise ValueError("API key cannot be empty.")
-        os.environ["OPENAI_API_KEY"] = api_key
+# def setup_openai_key():
+#     if not os.environ.get("OPENAI_API_KEY"):
+#         api_key = getpass.getpass("Enter OpenAI API key: ")
+#         if not api_key:
+#             raise ValueError("API key cannot be empty.")
+#         os.environ["OPENAI_API_KEY"] = api_key
 
 # load pages of a single pdf
 

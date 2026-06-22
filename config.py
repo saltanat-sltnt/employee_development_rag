@@ -18,6 +18,12 @@ COLLECTION_NAME = "example_collection"
 # embedding model
 EMBEDDING_MODEL = "text-embedding-3-small"
 
+# chat model for answer generation
+CHAT_MODEL = "gpt-4o-mini"
+
+# num of chunks to retrieve
+RETRIEVAL_K = 2
+
 # chunking settings
 CHUNK_SIZE = 1000
 CHUNK_OVERLAP = 200
